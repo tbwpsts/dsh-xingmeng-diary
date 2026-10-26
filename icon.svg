@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-label="星梦的心情日记">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1d2a44"/>
+      <stop offset="1" stop-color="#2b1f3d"/>
+    </linearGradient>
+    <linearGradient id="page" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eef4ff"/>
+      <stop offset="1" stop-color="#cfddf5"/>
+    </linearGradient>
+    <linearGradient id="ribbon" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff9ec4"/>
+      <stop offset="1" stop-color="#ff6fa8"/>
+    </linearGradient>
+  </defs>
+  <rect x="8" y="8" width="240" height="240" rx="56" fill="url(#bg)"/>
+  <g opacity="0.45" fill="#9ec5ff">
+    <circle cx="58" cy="52" r="3"/>
+    <circle cx="202" cy="70" r="2.6"/>
+    <circle cx="214" cy="188" r="3.2"/>
+    <circle cx="46" cy="196" r="2.4"/>
+  </g>
+  <g transform="translate(0 6)">
+    <path d="M74 84 64 52l28 14a74 74 0 0 1 72 0l28-14-10 32" fill="#f4f7ff" stroke="#f4f7ff" stroke-width="8" stroke-linejoin="round"/>
+    <path d="M72 84h112a10 10 0 0 1 10 10v96a10 10 0 0 1-10 10H72a10 10 0 0 1-10-10V94a10 10 0 0 1 10-10Z" fill="url(#page)" stroke="#b9cbe8" stroke-width="4"/>
+    <path d="M72 84h56v116H72a10 10 0 0 1-10-10V94a10 10 0 0 1 10-10Z" fill="#e3ecfb" opacity="0.55"/>
+    <path d="M128 84v116" stroke="#b9cbe8" stroke-width="4"/>
+    <path d="M176 84h-34v58l17-12 17 12V84Z" fill="url(#ribbon)"/>
+    <path d="M128 88v112" stroke="#b9cbe8" stroke-width="1.5" opacity="0.55"/>
+    <g stroke="#8fa8cb" stroke-width="4" stroke-linecap="round" opacity="0.8">
+      <path d="M88 116h22M88 134h22M88 152h16"/>
+      <path d="M152 116h18M152 134h18M152 152h12"/>
+    </g>
+    <path d="M150 190c-6-7-16-5-16 4 0 7 9 12 16 17 7-5 16-10 16-17 0-9-10-11-16-4Z" fill="#ff8fbb" opacity="0.9"/>
+  </g>
+</svg>

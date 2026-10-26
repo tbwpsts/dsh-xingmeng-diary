@@ -1,0 +1,75 @@
+{
+  "name": "dsh-xingmeng-diary",
+  "version": "0.1.0",
+  "description": "给 DeepSeek Harness 的心情日记插件：把每天的陪伴片段和心情变化，写进同一个 Markdown 文档。",
+  "type": "module",
+  "main": "index.js",
+  "icon": "./icon.svg",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./icon": "./icon.svg",
+    "./locale/*.json": "./locale/*.json",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "diary-core.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-ui-settings"
+      ]
+    }
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "diary",
+    "journal",
+    "mood",
+    "agent",
+    "心情日记"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "tbwpsts",
+    "url": "https://github.com/tbwpsts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tbwpsts/dsh-xingmeng-diary.git"
+  },
+  "homepage": "https://github.com/tbwpsts/dsh-xingmeng-diary#readme",
+  "bugs": {
+    "url": "https://github.com/tbwpsts/dsh-xingmeng-diary/issues"
+  },
+  "scripts": {
+    "test": "node test-core.mjs && node test-plugin.mjs && node test-ui.mjs",
+    "test:core": "node test-core.mjs",
+    "test:plugin": "node test-plugin.mjs",
+    "test:ui": "node test-ui.mjs"
+  },
+  "devDependencies": {
+    "jsdom": "^25.0.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}
